@@ -1,0 +1,40 @@
+# Carpetas de compilación
+target/
+build/
+
+# Configuración sensible
+application.properties
+application.yml
+# Archivos de ejemplo sí se incluyen
+!application.example.properties
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+.sts4-cache
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+
+# Archivos ocultos del sistema
+.DS_Store
+Thumbs.db
+
+# Configuración específica de NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+HELP.md
+src/main/resources/
