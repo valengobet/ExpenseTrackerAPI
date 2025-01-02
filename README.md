@@ -1,5 +1,4 @@
 # ExpenseTrackerAPI
-A RESTful API for managing expenses, built with Spring Boot. This API allows users to create, read, update, and delete expense records, categorize expenses, track payments by method or recipient, and calculate total expenses by category, date, month, or year. Fully documented with Swagger for easy integration.
 
 ### Features
 RESTful CRUD operations for expense management.
@@ -41,8 +40,6 @@ You can run the app using Maven:
 ### API Documentation
 Swagger UI documentation is available at:
 http://localhost:8080/swagger-ui/index.html
-![image](https://github.com/user-attachments/assets/6fd6a422-49ef-40fb-96cf-59e46255fc75)
-![image](https://github.com/user-attachments/assets/9832955c-437c-42bb-a74e-e17fbaeb14f6)
 
 ### API Endpoints  
 Expense Management Endpoints  
