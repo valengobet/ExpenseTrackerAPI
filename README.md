@@ -45,27 +45,32 @@ http://localhost:8080/swagger-ui/index.html
 ![image](https://github.com/user-attachments/assets/9832955c-437c-42bb-a74e-e17fbaeb14f6)
 
 ### API Endpoints  
-Expense CRUD Endpoints  
+Expense Management Endpoints  
 
-| Method | URL              | Description           | Request Body |  
-|--------|------------------|-----------------------|--------------|  
-| POST   | /gastos          | Add a new expense     | JSON         |  
-| GET    | /gastos          | Get all expenses      | N/A          |  
-| GET    | /gastos/{id}     | Get expense by ID     | N/A          |  
-| PUT    | /gastos/{id}     | Update expense by ID  | JSON         |  
-| DELETE | /gastos/{id}     | Delete expense by ID  | N/A          |  
+| Method | URL                                         | Description                          | Request Body           |  
+|--------|--------------------------------------------|--------------------------------------|------------------------|  
+| POST   | /gastos                                     | Add a new expense                    | JSON                  |  
+| POST   | /gastos/categoria                          | Create a new category                | JSON (String: category)|  
+| POST   | /gastos/metodo_pago                        | Create a new payment method          | JSON (String: method)  |  
+| POST   | /gastos/destinatario                       | Create a new recipient               | JSON (String: recipient)|  
+| GET    | /gastos                                     | Get all expenses                     | N/A                   |  
+| GET    | /gastos/{id}                                | Get expense by ID                    | N/A                   |  
+| PUT    | /gastos/{id}                                | Update expense by ID                 | JSON                  |  
+| DELETE | /gastos/{id}                                | Delete expense by ID                 | N/A                   |  
+| GET    | /gastos/categoria/{categoria}              | Get expenses by category             | N/A                   |  
+| GET    | /gastos/metodo_pago/{metodo_pago}          | Get expenses by payment method       | N/A                   |  
+| GET    | /gastos/destinatario/{destinatario}        | Get expenses by recipient            | N/A                   |  
+| GET    | /gastos/fecha/{fecha}                      | Get expenses by date                 | N/A                   |  
+| GET    | /gastos/mes/{mes}                          | Get expenses by month                | N/A                   |  
+| GET    | /gastos/anio/{anio}                        | Get expenses by year                 | N/A                   |  
+| GET    | /gastos/categoria/gasto_total/{categoria}  | Get total expense by category        | N/A                   |  
+| GET    | /gastos/metodo_pago/gasto_total/{metodo_pago} | Get total expense by payment method| N/A                   |  
+| GET    | /gastos/destinatario/gasto_total/{destinatario} | Get total expense by recipient     | N/A                   |  
+| GET    | /gastos/fecha/gasto_total/{fecha}          | Get total expense by date            | N/A                   |  
+| GET    | /gastos/mes/gasto_total/{mes}              | Get total expense by month           | N/A                   |  
+| GET    | /gastos/anio/gasto_total/{anio}            | Get total expense by year            | N/A                   |  
 
-### Additional Endpoints for Filtering and Summarizing  
 
-| Method | URL                                         | Description                       |  
-|--------|--------------------------------------------|-----------------------------------|  
-| GET    | /gastos/categoria/{categoria}              | Get expenses by category          |  
-| GET    | /gastos/fecha/{fecha}                      | Get expenses by date              |  
-| GET    | /gastos/mes/{mes}                          | Get expenses by month             |  
-| GET    | /gastos/anio/{anio}                        | Get expenses by year              |  
-| GET    | /gastos/categoria/gasto_total/{categoria}  | Get total expense by category     |  
-| GET    | /gastos/metodo_pago/gasto_total/{metodo_pago} | Get total expense by payment method |  
-| GET    | /gastos/destinatario/gasto_total/{destinatario} | Get total expense by recipient  |  
 
 ## Author
 **Valentin Gobet**
